@@ -1,0 +1,56 @@
+{
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "model": "qwen2.5:7b-instruct"
+  },
+  "ssh": {
+    "host": "127.0.0.1",
+    "port": 22,
+    "username": "root",
+    "private_key": "~/.ssh/id_rsa",
+    "password": null,
+    "timeout": 15
+  },
+  "agent": {
+    "read_only_by_default": true,
+    "verify_after_fix": true,
+    "allowed_services": [
+      "nginx",
+      "docker",
+      "ssh",
+      "redis",
+      "postgresql",
+      "mysql",
+      "mysqld",
+      "haproxy",
+      "apache2",
+      "systemd-networkd"
+    ],
+    "allowed_prefixes": [
+      "ls ",
+      "ls -",
+      "pwd",
+      "whoami",
+      "uname",
+      "cat ",
+      "tail ",
+      "head ",
+      "grep ",
+      "find ",
+      "ps ",
+      "df -h",
+      "free -h",
+      "ss ",
+      "netstat ",
+      "which ",
+      "id ",
+      "ip ",
+      "hostname",
+      "journalctl ",
+      "systemctl ",
+      "service ",
+      "nginx -t",
+      "docker "
+    ]
+  }
+}

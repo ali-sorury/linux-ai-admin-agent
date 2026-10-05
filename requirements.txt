@@ -1,0 +1,3 @@
+# Python dependencies for the Linux AI admin agent
+paramiko>=3.4.0
+requests>=2.31.0
